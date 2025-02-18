@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 /**
- * 商品管理
+ * 餐品管理
  *
  * @author FanK
  */
@@ -26,12 +26,12 @@ public class CommodityInfo implements Serializable {
     private Integer id;
 
     /**
-     * 商品编号
+     * 餐品编号
      */
     private String code;
 
     /**
-     * 商品名称
+     * 餐品名称
      */
     private String name;
 
@@ -46,12 +46,12 @@ public class CommodityInfo implements Serializable {
     private Integer stockNum;
 
     /**
-     * 商品型号
+     * 餐品型号
      */
     private String model;
 
     /**
-     * 商品描述
+     * 餐品描述
      */
     private String content;
 
@@ -76,12 +76,12 @@ public class CommodityInfo implements Serializable {
     private Integer shopId;
 
     /**
-     * 商品类型
+     * 餐品类型
      */
     private Integer type;
 
     /**
-     * 商品状态（0.下架 1.上架）
+     * 餐品状态（0.下架 1.上架）
      */
     private String onPut;
 }

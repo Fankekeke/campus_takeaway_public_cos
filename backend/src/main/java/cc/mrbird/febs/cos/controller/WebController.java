@@ -391,7 +391,7 @@ public class WebController {
     }
 
     /**
-     * 商品详情
+     * 餐品详情
      *
      * @param commodityId
      * @return 结果
@@ -402,7 +402,7 @@ public class WebController {
     }
 
     /**
-     * 查询商品是否在购物车中
+     * 查询餐品是否在购物车中
      *
      * @param userId
      * @param commodityId
@@ -479,7 +479,7 @@ public class WebController {
     }
 
     /**
-     * 购买商品
+     * 购买餐品
      *
      * @param orderInfo
      * @return 结果
@@ -512,7 +512,7 @@ public class WebController {
     }
 
     /**
-     * 查询店铺及商品信息
+     * 查询店铺及餐品信息
      *
      * @return 结果
      */
@@ -522,7 +522,7 @@ public class WebController {
     }
 
     /**
-     * 获取商铺及商品详细信息
+     * 获取商铺及餐品详细信息
      *
      * @param shopId
      * @return 结果
@@ -533,7 +533,7 @@ public class WebController {
     }
 
     /**
-     * 店铺商品排序方式
+     * 店铺餐品排序方式
      *
      * @param shopId
      * @return 结果
@@ -544,7 +544,7 @@ public class WebController {
     }
 
     /**
-     * 模糊查询店内商品
+     * 模糊查询店内餐品
      *
      * @param shopId
      * @param key
@@ -556,7 +556,7 @@ public class WebController {
     }
 
     /**
-     * 查找商品或店铺
+     * 查找餐品或店铺
      *
      * @param key
      * @return 结果
@@ -604,7 +604,7 @@ public class WebController {
     }
 
     /**
-     * 获取商品评价信息
+     * 获取餐品评价信息
      *
      * @param commodityId
      * @return 结果
@@ -615,7 +615,7 @@ public class WebController {
     }
 
     /**
-     * 添加商品信息
+     * 添加餐品信息
      *
      * @param commodityInfo
      * @return 结果
@@ -630,7 +630,7 @@ public class WebController {
     }
 
     /**
-     * 修改商品信息
+     * 修改餐品信息
      *
      * @param commodityInfo
      * @return 结果
@@ -641,7 +641,7 @@ public class WebController {
     }
 
     /**
-     * 根据用户获取商品信息
+     * 根据用户获取餐品信息
      *
      * @param userId
      * @return 结果
@@ -652,7 +652,7 @@ public class WebController {
     }
 
     /**
-     * 根据ID获取商品信息
+     * 根据ID获取餐品信息
      *
      * @param commodityId
      * @return 结果

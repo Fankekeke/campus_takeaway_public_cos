@@ -22,17 +22,15 @@
             <a-row class="more-info">
               <a-col :span="4"></a-col>
               <a-col :span="4"></a-col>
+              <a-col :span="4"></a-col>
               <a-col :span="4">
                 <head-info title="用户数量" :content="userNum" :center="false" :bordered="false"/>
-              </a-col>
-              <a-col :span="4">
-                <head-info title="商铺" :content="userAuditNum" :center="false" :bordered="false"/>
               </a-col>
               <a-col :span="4">
                 <head-info title="订单数量" :content="orderNum" :center="false" />
               </a-col>
               <a-col :span="4">
-                <head-info title="商品总量" :content="commodityNum" :center="false" />
+                <head-info title="餐品总量" :content="commodityNum" :center="false" />
               </a-col>
             </a-row>
           </div>

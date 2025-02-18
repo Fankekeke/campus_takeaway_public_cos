@@ -77,7 +77,7 @@
             oi.id = #{ id }
     </select>
 
-    <!-- 根据商品ID获取评价 -->
+    <!-- 根据餐品ID获取评价 -->
     <select id="getEvaluationByCommodityId" resultType="java.util.LinkedHashMap">
         SELECT
         eva.id,

@@ -133,7 +133,7 @@ export default {
         title: '类型编号',
         dataIndex: 'code'
       }, {
-        title: '商品类型',
+        title: '餐品类型',
         dataIndex: 'typeName',
         customRender: (text, row, index) => {
           if (text !== null) {
@@ -155,7 +155,7 @@ export default {
           </a-popover>
         }
       }, {
-        title: '商品类型内容',
+        title: '餐品类型内容',
         dataIndex: 'remark',
         scopedSlots: { customRender: 'contentShow' }
       }, {
@@ -193,7 +193,7 @@ export default {
     },
     handleBulletinAddSuccess () {
       this.bulletinAdd.visiable = false
-      this.$message.success('新增商品类型成功')
+      this.$message.success('新增餐品类型成功')
       this.search()
     },
     edit (record) {
@@ -205,7 +205,7 @@ export default {
     },
     handleBulletinEditSuccess () {
       this.bulletinEdit.visiable = false
-      this.$message.success('修改商品类型成功')
+      this.$message.success('修改餐品类型成功')
       this.search()
     },
     handleDeptChange (value) {

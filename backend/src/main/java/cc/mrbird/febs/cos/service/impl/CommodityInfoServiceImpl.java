@@ -19,10 +19,10 @@ import java.util.List;
 public class CommodityInfoServiceImpl extends ServiceImpl<CommodityInfoMapper, CommodityInfo> implements ICommodityInfoService {
 
     /**
-     * 分页查询商品信息
+     * 分页查询餐品信息
      *
      * @param page          分页对象
-     * @param commodityInfo 商品信息
+     * @param commodityInfo 餐品信息
      * @return 结果
      */
     @Override
@@ -41,9 +41,9 @@ public class CommodityInfoServiceImpl extends ServiceImpl<CommodityInfoMapper, C
     }
 
     /**
-     * 商品详情
+     * 餐品详情
      *
-     * @param commodityId 商品ID
+     * @param commodityId 餐品ID
      * @return 结果
      */
     @Override
@@ -52,7 +52,7 @@ public class CommodityInfoServiceImpl extends ServiceImpl<CommodityInfoMapper, C
     }
 
     /**
-     * 查询店铺及商品信息
+     * 查询店铺及餐品信息
      *
      * @return 结果
      */
@@ -71,7 +71,7 @@ public class CommodityInfoServiceImpl extends ServiceImpl<CommodityInfoMapper, C
     }
 
     /**
-     * 店铺商品排序方式
+     * 店铺餐品排序方式
      *
      * @param shopId 商铺ID
      * @param type   类型
@@ -83,10 +83,10 @@ public class CommodityInfoServiceImpl extends ServiceImpl<CommodityInfoMapper, C
     }
 
     /**
-     * 模糊查询店内商品
+     * 模糊查询店内餐品
      *
      * @param shopId 商铺ID
-     * @param key    商品
+     * @param key    餐品
      * @return 结果
      */
     @Override
@@ -95,9 +95,9 @@ public class CommodityInfoServiceImpl extends ServiceImpl<CommodityInfoMapper, C
     }
 
     /**
-     * 查找商品或店铺
+     * 查找餐品或店铺
      *
-     * @param key 商品
+     * @param key 餐品
      * @return 结果
      */
     @Override
@@ -109,7 +109,7 @@ public class CommodityInfoServiceImpl extends ServiceImpl<CommodityInfoMapper, C
     }
 
     /**
-     * 根据用户获取商品信息
+     * 根据用户获取餐品信息
      *
      * @param userId 用户ID
      * @return 结果

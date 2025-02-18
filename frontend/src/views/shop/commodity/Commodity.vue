@@ -7,7 +7,7 @@
           <div :class="advanced ? null: 'fold'">
             <a-col :md="6" :sm="24">
               <a-form-item
-                label="商品编号"
+                label="餐品编号"
                 :labelCol="{span: 5}"
                 :wrapperCol="{span: 18, offset: 1}">
                 <a-input v-model="queryParams.code"/>
@@ -15,7 +15,7 @@
             </a-col>
             <a-col :md="6" :sm="24">
               <a-form-item
-                label="商品名称"
+                label="餐品名称"
                 :labelCol="{span: 5}"
                 :wrapperCol="{span: 18, offset: 1}">
                 <a-input v-model="queryParams.name"/>
@@ -23,7 +23,7 @@
             </a-col>
             <a-col :md="6" :sm="24">
               <a-form-item
-                label="商品型号"
+                label="餐品型号"
                 :labelCol="{span: 5}"
                 :wrapperCol="{span: 18, offset: 1}">
                 <a-input v-model="queryParams.model"/>
@@ -137,10 +137,10 @@ export default {
     }),
     columns () {
       return [{
-        title: '商品编号',
+        title: '餐品编号',
         dataIndex: 'code'
       }, {
-        title: '商品名称',
+        title: '餐品名称',
         dataIndex: 'name'
       }, {
         title: '所属商铺',
@@ -153,7 +153,7 @@ export default {
           }
         }
       }, {
-        title: '商品价格',
+        title: '餐品价格',
         dataIndex: 'price',
         customRender: (text, row, index) => {
           if (text !== null) {
@@ -193,7 +193,7 @@ export default {
           }
         }
       }, {
-        title: '商品图片',
+        title: '餐品图片',
         dataIndex: 'images',
         customRender: (text, record, index) => {
           if (!record.images) return <a-avatar shape="square" icon="user" />
@@ -240,7 +240,7 @@ export default {
     },
     handlecommodityAddSuccess () {
       this.commodityAdd.visiable = false
-      this.$message.success('新增商品成功')
+      this.$message.success('新增餐品成功')
       this.search()
     },
     edit (record) {
@@ -252,7 +252,7 @@ export default {
     },
     handlecommodityEditSuccess () {
       this.commodityEdit.visiable = false
-      this.$message.success('修改商品成功')
+      this.$message.success('修改餐品成功')
       this.search()
     },
     handleDeptChange (value) {

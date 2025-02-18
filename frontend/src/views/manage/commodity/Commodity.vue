@@ -7,7 +7,7 @@
           <div :class="advanced ? null: 'fold'">
             <a-col :md="6" :sm="24">
               <a-form-item
-                label="商品编号"
+                label="餐品编号"
                 :labelCol="{span: 5}"
                 :wrapperCol="{span: 18, offset: 1}">
                 <a-input v-model="queryParams.code"/>
@@ -15,7 +15,7 @@
             </a-col>
             <a-col :md="6" :sm="24">
               <a-form-item
-                label="商品名称"
+                label="餐品名称"
                 :labelCol="{span: 5}"
                 :wrapperCol="{span: 18, offset: 1}">
                 <a-input v-model="queryParams.name"/>
@@ -23,7 +23,7 @@
             </a-col>
             <a-col :md="6" :sm="24">
               <a-form-item
-                label="商品型号"
+                label="餐品型号"
                 :labelCol="{span: 5}"
                 :wrapperCol="{span: 18, offset: 1}">
                 <a-input v-model="queryParams.model"/>
@@ -137,11 +137,11 @@ export default {
     }),
     columns () {
       return [{
-        title: '商品编号',
+        title: '餐品编号',
         ellipsis: true,
         dataIndex: 'code'
       }, {
-        title: '商品名称',
+        title: '餐品名称',
         ellipsis: true,
         dataIndex: 'name'
       }, {
@@ -156,7 +156,7 @@ export default {
           }
         }
       }, {
-        title: '商品价格',
+        title: '餐品价格',
         dataIndex: 'price',
         ellipsis: true,
         customRender: (text, row, index) => {
@@ -200,7 +200,7 @@ export default {
           }
         }
       }, {
-        title: '商品图片',
+        title: '餐品图片',
         dataIndex: 'images',
         customRender: (text, record, index) => {
           if (!record.images) return <a-avatar shape="square" icon="user" />
@@ -211,11 +211,6 @@ export default {
             <a-avatar shape="square" icon="user" src={ 'http://127.0.0.1:9527/imagesWeb/' + record.images.split(',')[0] } />
           </a-popover>
         }
-      }, {
-        title: '备注',
-        dataIndex: 'content',
-        ellipsis: true,
-        scopedSlots: { customRender: 'contentShow' }
       }, {
         title: '操作',
         dataIndex: 'operation',
@@ -248,7 +243,7 @@ export default {
     },
     handlecommodityAddSuccess () {
       this.commodityAdd.visiable = false
-      this.$message.success('新增商品成功')
+      this.$message.success('新增餐品成功')
       this.search()
     },
     edit (record) {
@@ -260,7 +255,7 @@ export default {
     },
     handlecommodityEditSuccess () {
       this.commodityEdit.visiable = false
-      this.$message.success('修改商品成功')
+      this.$message.success('修改餐品成功')
       this.search()
     },
     handleDeptChange (value) {

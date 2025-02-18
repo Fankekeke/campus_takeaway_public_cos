@@ -33,9 +33,9 @@ public class EvaluationController {
     }
 
     /**
-     * 根据商品ID获取评价
+     * 根据餐品ID获取评价
      *
-     * @param id 商品ID
+     * @param id 餐品ID
      * @return 结果
      */
     @GetMapping("/getEvaluationByCommodityId")

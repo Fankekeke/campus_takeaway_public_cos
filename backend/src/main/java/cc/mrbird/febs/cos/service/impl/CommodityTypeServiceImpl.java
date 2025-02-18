@@ -17,10 +17,10 @@ import java.util.LinkedHashMap;
 public class CommodityTypeServiceImpl extends ServiceImpl<CommodityTypeMapper, CommodityType> implements ICommodityTypeService {
 
     /**
-     * 分页获取商品类型信息
+     * 分页获取餐品类型信息
      *
      * @param page          分页对象
-     * @param commodityType 商品类型信息
+     * @param commodityType 餐品类型信息
      * @return 结果
      */
     @Override

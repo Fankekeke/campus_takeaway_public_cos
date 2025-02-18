@@ -7,7 +7,7 @@
           <div :class="advanced ? null: 'fold'">
             <a-col :md="6" :sm="24">
               <a-form-item
-                label='商品名称'
+                label='餐品名称'
                 :labelCol="{span: 5}"
                 :wrapperCol="{span: 18, offset: 1}">
                 <a-input v-model="queryParams.name"/>
@@ -121,11 +121,11 @@ export default {
         title: '订单编号',
         dataIndex: 'code'
       }, {
-        title: '商品名称',
+        title: '餐品名称',
         dataIndex: 'name',
         scopedSlots: { customRender: 'nameShow' }
       }, {
-        title: '商品类型',
+        title: '餐品类型',
         dataIndex: 'typeName',
         customRender: (text, row, index) => {
           if (text !== null) {

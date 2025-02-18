@@ -62,7 +62,7 @@
       <br/>
       <br/>
       <a-row style="padding-left: 24px;padding-right: 24px;">
-        <a-col style="margin-bottom: 15px"><span style="font-size: 15px;font-weight: 650;color: #000c17">商品信息 - </span>
+        <a-col style="margin-bottom: 15px"><span style="font-size: 15px;font-weight: 650;color: #000c17">餐品信息 - </span>
           <span style="font-size: 13px;color: #aaaaaa">
             <a-popover>
               <template slot="content">
@@ -72,10 +72,10 @@
             </a-popover>
           </span>
         </a-col>
-        <a-col :span="8"><b>商品编号：</b>
+        <a-col :span="8"><b>餐品编号：</b>
           {{ orderData.commodityCode }}
         </a-col>
-        <a-col :span="8"><b>商品名称：</b>
+        <a-col :span="8"><b>餐品名称：</b>
           <a-tooltip>
             <template slot="title">
               {{ orderData.name }}
@@ -83,7 +83,7 @@
             {{ orderData.name.slice(0, 7) }}...
           </a-tooltip>
         </a-col>
-        <a-col :span="8"><b>商品类型：</b>
+        <a-col :span="8"><b>餐品类型：</b>
           {{ orderData.typeName }}
         </a-col>
       </a-row>
@@ -100,7 +100,7 @@
       <br/>
       <br/>
       <a-row style="padding-left: 24px;padding-right: 24px;">
-        <a-col style="margin-bottom: 15px"><span style="font-size: 15px;font-weight: 650;color: #000c17">商品介绍</span></a-col>
+        <a-col style="margin-bottom: 15px"><span style="font-size: 15px;font-weight: 650;color: #000c17">餐品介绍</span></a-col>
         <a-col :span="24">
           {{ orderData.content !== null ? orderData.content : '- -' }}
         </a-col>

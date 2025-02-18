@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cc.mrbird.febs.cos.dao.CommodityInfoMapper">
 
-    <!-- 分页查询商品信息 -->
+    <!-- 分页查询餐品信息 -->
     <select id="getCommodityByPage" resultType="java.util.LinkedHashMap">
         SELECT
         ci.id,
@@ -70,7 +70,7 @@
             limit 4
     </select>
 
-    <!-- 商品详情 -->
+    <!-- 餐品详情 -->
     <select id="goodsDetail" resultType="java.util.LinkedHashMap">
         SELECT
             ci.id,
@@ -112,7 +112,7 @@
         AND si.status = 1
     </select>
 
-    <!-- 获取商铺及商品详细信息 -->
+    <!-- 获取商铺及餐品详细信息 -->
     <select id="shopInfoDetail" resultType="java.util.LinkedHashMap">
         SELECT
             ci.id,
@@ -154,7 +154,7 @@
         GROUP BY si.id
     </select>
 
-    <!-- 店铺商品排序方式 -->
+    <!-- 店铺餐品排序方式 -->
     <select id="shopCommoditySort" resultType="java.util.LinkedHashMap">
         SELECT
         ci.id,
@@ -185,7 +185,7 @@
         </if>
     </select>
 
-    <!-- 模糊查询店内商品 -->
+    <!-- 模糊查询店内餐品 -->
     <select id="commodityLikeByShop" resultType="java.util.LinkedHashMap">
         SELECT
         ci.id,
@@ -234,7 +234,7 @@
         GROUP BY si.id
     </select>
 
-    <!-- 根据用户获取商品信息 -->
+    <!-- 根据用户获取餐品信息 -->
     <select id="getGoodsByUserId" resultType="java.util.LinkedHashMap">
         SELECT
             ci.*

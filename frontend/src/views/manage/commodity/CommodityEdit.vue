@@ -1,5 +1,5 @@
 <template>
-  <a-modal v-model="show" title="修改商品" @cancel="onClose" :width="800">
+  <a-modal v-model="show" title="修改餐品" @cancel="onClose" :width="800">
     <template slot="footer">
       <a-button key="back" @click="onClose">
         取消
@@ -11,7 +11,7 @@
     <a-form :form="form" layout="vertical">
       <a-row :gutter="20">
         <a-col :span="12">
-          <a-form-item label='商品名称' v-bind="formItemLayout">
+          <a-form-item label='餐品名称' v-bind="formItemLayout">
             <a-input v-decorator="[
             'name',
             { rules: [{ required: true, message: '请输入名称!' }] }
@@ -27,10 +27,10 @@
           </a-form-item>
         </a-col>
         <a-col :span="12">
-          <a-form-item label='商品价格' v-bind="formItemLayout">
+          <a-form-item label='餐品价格' v-bind="formItemLayout">
             <a-input-number style="width: 100%" :min="0.1" v-decorator="[
             'price',
-            { rules: [{ required: true, message: '请输入商品价格!' }] }
+            { rules: [{ required: true, message: '请输入餐品价格!' }] }
             ]"/>
           </a-form-item>
         </a-col>
@@ -43,20 +43,20 @@
           </a-form-item>
         </a-col>
         <a-col :span="12">
-          <a-form-item label='商品类型' v-bind="formItemLayout">
+          <a-form-item label='餐品类型' v-bind="formItemLayout">
             <a-select
               style="width: 100%"
-              v-decorator="['type',{rules: [{ required: true, message: '请选择商品类型' }]}]">
+              v-decorator="['type',{rules: [{ required: true, message: '请选择餐品类型' }]}]">
               <a-select-option v-for="(item, index) in typeList" :key="index" :value="item.id">{{item.typeName}}</a-select-option>
             </a-select>
           </a-form-item>
         </a-col>
         <a-col :span="12">
-          <a-form-item label='商品状态' v-bind="formItemLayout">
+          <a-form-item label='餐品状态' v-bind="formItemLayout">
             <a-radio-group default-value="1" button-style="solid"
                            v-decorator="[
               'onPut',
-              { rules: [{ required: true, message: '请输入商品状态!' }] }
+              { rules: [{ required: true, message: '请输入餐品状态!' }] }
               ]">
               <a-radio-button value="0">下架</a-radio-button>
               <a-radio-button value="1">上架</a-radio-button>
@@ -67,7 +67,7 @@
           <a-form-item label='备注' v-bind="formItemLayout">
             <a-textarea :rows="6" v-decorator="[
             'content',
-             { rules: [{ required: true, message: '请输入商品备注!' }] }
+             { rules: [{ required: true, message: '请输入餐品备注!' }] }
             ]"/>
           </a-form-item>
         </a-col>

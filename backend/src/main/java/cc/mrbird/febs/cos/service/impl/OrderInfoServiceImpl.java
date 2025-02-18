@@ -116,7 +116,7 @@ public class OrderInfoServiceImpl extends ServiceImpl<OrderInfoMapper, OrderInfo
         result.put("orderCode", orderInfoList.size());
         // 总收益
         result.put("orderPrice", orderInfoList.stream().map(e -> NumberUtil.mul(e.getOrderPrice(), e.getUserNum())).reduce(BigDecimal.ZERO, BigDecimal::add));
-        // 商品数量
+        // 餐品数量
         result.put("pharmacyNum", commodityInfoService.count(Wrappers.<CommodityInfo>lambdaQuery().eq(CommodityInfo::getShopId, shopInfo.getId())));
 
         // 本月订单数量
@@ -170,7 +170,7 @@ public class OrderInfoServiceImpl extends ServiceImpl<OrderInfoMapper, OrderInfo
         UserInfo userInfo = new UserInfo();
         result.put("user", userInfo);
 
-        // 商品信息
+        // 餐品信息
         CommodityInfo commodityInfo = commodityInfoService.getById(orderInfo.getCommodityId());
         result.put("commodity", commodityInfo);
 

@@ -32,9 +32,9 @@ public interface EvaluationMapper extends BaseMapper<Evaluation> {
     List<LinkedHashMap<String, Object>> getEvaluationByOrderId(@Param("id") Integer id);
 
     /**
-     * 根据商品ID获取评价
+     * 根据餐品ID获取评价
      *
-     * @param id 商品ID
+     * @param id 餐品ID
      * @return 结果
      */
     List<LinkedHashMap<String, Object>> getEvaluationByCommodityId(@Param("id") Integer id);

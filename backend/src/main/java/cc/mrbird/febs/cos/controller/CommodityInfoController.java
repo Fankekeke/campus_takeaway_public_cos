@@ -30,10 +30,10 @@ public class CommodityInfoController {
     private final IShopInfoService shopInfoService;
 
     /**
-     * 分页获取商品信息
+     * 分页获取餐品信息
      *
      * @param page          分页对象
-     * @param commodityInfo 商品信息
+     * @param commodityInfo 餐品信息
      * @return 结果
      */
     @GetMapping("/page")
@@ -42,7 +42,7 @@ public class CommodityInfoController {
     }
 
     /**
-     * 获取商品信息
+     * 获取餐品信息
      *
      * @return 结果
      */
@@ -52,9 +52,9 @@ public class CommodityInfoController {
     }
 
     /**
-     * 获取商品信息
+     * 获取餐品信息
      *
-     * @param key 商品名称
+     * @param key 餐品名称
      * @return 结果
      */
     @GetMapping("/commodity/list")
@@ -64,7 +64,7 @@ public class CommodityInfoController {
     }
 
     /**
-     * 获取商品详细信息
+     * 获取餐品详细信息
      *
      * @param id ID
      * @return 结果
@@ -75,9 +75,9 @@ public class CommodityInfoController {
     }
 
     /**
-     * 新增商品信息
+     * 新增餐品信息
      *
-     * @param commodityInfo 商品信息
+     * @param commodityInfo 餐品信息
      * @return 结果
      */
     @PostMapping
@@ -93,9 +93,9 @@ public class CommodityInfoController {
     }
 
     /**
-     * 修改商品信息
+     * 修改餐品信息
      *
-     * @param commodityInfo 商品信息
+     * @param commodityInfo 餐品信息
      * @return 结果
      */
     @PutMapping
@@ -104,7 +104,7 @@ public class CommodityInfoController {
     }
 
     /**
-     * 删除商品信息
+     * 删除餐品信息
      *
      * @param ids 主键IDS
      * @return 结果

@@ -37,7 +37,7 @@ public class OrderInfo implements Serializable {
     private String orderName;
 
     /**
-     * 商品ID
+     * 餐品ID
      */
     private Integer commodityId;
 

@@ -26,10 +26,10 @@ public class CommodityTypeController {
     private final ICommodityTypeService commodityTypeService;
 
     /**
-     * 分页获取商品类型信息
+     * 分页获取餐品类型信息
      *
      * @param page          分页对象
-     * @param commodityType 商品类型信息
+     * @param commodityType 餐品类型信息
      * @return 结果
      */
     @GetMapping("/page")
@@ -38,7 +38,7 @@ public class CommodityTypeController {
     }
 
     /**
-     * 获取商品类型信息
+     * 获取餐品类型信息
      *
      * @return 结果
      */
@@ -48,7 +48,7 @@ public class CommodityTypeController {
     }
 
     /**
-     * 获取商品类型详细信息
+     * 获取餐品类型详细信息
      *
      * @param id ID
      * @return 结果
@@ -59,9 +59,9 @@ public class CommodityTypeController {
     }
 
     /**
-     * 新增商品类型信息
+     * 新增餐品类型信息
      *
-     * @param commodityType 商品类型信息
+     * @param commodityType 餐品类型信息
      * @return 结果
      */
     @PostMapping
@@ -72,9 +72,9 @@ public class CommodityTypeController {
     }
 
     /**
-     * 修改商品类型信息
+     * 修改餐品类型信息
      *
-     * @param commodityType 商品类型信息
+     * @param commodityType 餐品类型信息
      * @return 结果
      */
     @PutMapping
@@ -83,7 +83,7 @@ public class CommodityTypeController {
     }
 
     /**
-     * 删除商品类型信息
+     * 删除餐品类型信息
      *
      * @param ids 主键IDS
      * @return 结果
