@@ -23,7 +23,7 @@
       </a-row>
       <br/>
       <a-row style="padding-left: 24px;padding-right: 24px;">
-        <a-col :span="8"><b>发起人：</b>
+        <a-col :span="8"><b>购买人：</b>
           <a-popover>
             <template slot="content">
               <a-avatar shape="square" size={132} icon="user" :src="orderData.avatar" />

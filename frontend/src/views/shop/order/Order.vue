@@ -171,7 +171,7 @@ export default {
           }
         }
       }, {
-        title: '发起人',
+        title: '购买人',
         dataIndex: 'userName',
         scopedSlots: { customRender: 'userNameShow' }
       }, {

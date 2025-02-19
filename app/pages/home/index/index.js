@@ -37,7 +37,7 @@ Page({
 			id: 4,
 			icon: 'discoverfill',
 			color: 'olive',
-			name: '商品',
+			name: '餐品',
 			type: 4
 		}],
 		Headlines: [{

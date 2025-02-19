@@ -60,7 +60,7 @@
 
         <view class="text-gray text-sm solid-bottom order-price-log">
             <view class="log-list">
-                <text>商品总价</text> <text class="text-price canui-text-right">{{ orderInfo.price }}</text>
+                <text>餐品总价</text> <text class="text-price canui-text-right">{{ orderInfo.price }}</text>
             </view>
             <view class="log-list">
                 <text>运费(快递)</text> <text class="text-price canui-text-right">0.00</text>

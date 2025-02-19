@@ -3,18 +3,18 @@
     <view class="cu-bar fixed none-bg text-white bg-img" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
         <navigator class='action canui-head-title' open-type="navigateBack" hover-class="none">
             <text class='icon-back'></text>
-            添加商品
+            添加餐品
         </navigator>
     </view>
 </view>
 <view class="box" style="top: {{CustomBar}}px;">
     <br />
     <view style="padding: 20px;display: block">
-        <van-field model:value="{{ name }}" label="商品名称" placeholder="请输入" style="display: block;margin-top: 10px;" />
-        <van-field type='number' model:value="{{ price }}" label="商品价格" placeholder="请输入" style="display: block;margin-top: 10px;" />
-        <van-cell title="商品类型" is-link value="{{vaa}}" arrow-direction="down" bind:click="toggleBottomPopup" style="display: block;margin-top: 10px;" />
+        <van-field model:value="{{ name }}" label="餐品名称" placeholder="请输入" style="display: block;margin-top: 10px;" />
+        <van-field type='number' model:value="{{ price }}" label="餐品价格" placeholder="请输入" style="display: block;margin-top: 10px;" />
+        <van-cell title="餐品类型" is-link value="{{vaa}}" arrow-direction="down" bind:click="toggleBottomPopup" style="display: block;margin-top: 10px;" />
         <van-popup show="{{ bottom }}" position="bottom" custom-class="bottom" bind:close="toggleBottomPopup2">
-            <!-- <van-picker show-toolbar title="商品类型" columns="{{ column1 }}" bind:change="onChange1" bind:confirm="onConfirm" /> -->
+            <!-- <van-picker show-toolbar title="餐品类型" columns="{{ column1 }}" bind:change="onChange1" bind:confirm="onConfirm" /> -->
         </van-popup>
         <van-field model:value="{{ content }}" label="介绍" type="textarea" placeholder="请输入" style="display: block;margin-top: 15px;" autosize border="{{ false }}" />
         <van-radio-group value="{{ radio }}" bind:change="onChange">

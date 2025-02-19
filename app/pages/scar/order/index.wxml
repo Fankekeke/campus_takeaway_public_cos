@@ -48,7 +48,7 @@
             <view class="cu-list menu bg-white solid-bottom canui-selet">
                 <view class="cu-item">
                     <view class='content'>
-                        共 <text class="text-red"> 1</text> 件商品
+                        共 <text class="text-red"> 1</text> 件餐品
                     </view>
                     <view class='action'>
                         合计 <text class="text-price text-red">{{ item.price }}</text>
@@ -82,7 +82,7 @@
     <view class="order-price-log">
         <view class="bg-white log-card">
             <view class="log-list">
-                <text>商品总价</text> <text class="text-price canui-text-right">{{ allPrice }}</text>
+                <text>餐品总价</text> <text class="text-price canui-text-right">{{ allPrice }}</text>
             </view>
             <view class="log-list">
                 <text>运费(快递)</text> <text class="text-price canui-text-right text-red">0.00</text>

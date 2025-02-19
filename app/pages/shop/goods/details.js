@@ -59,7 +59,7 @@ Page({
     addCart() {
         if (this.data.goods.onPut == 0) {
             wx.showToast({
-                title: '该商品已下架',
+                title: '该餐品已下架',
                 icon: 'none',
                 duration: 2000
             })
@@ -70,7 +70,7 @@ Page({
                     http.get('selUserCartByGoodsId', { userId: res.data.id, commodityId: this.data.goods.id }).then((r) => {
                         if (r.data != 0) {
                             wx.showToast({
-                                title: '商品已在购物车',
+                                title: '餐品已在购物车',
                                 icon: 'none',
                                 duration: 2000
                             })
@@ -99,7 +99,7 @@ Page({
     buyGoods() {
         if (this.data.goods.onPut == 0) {
             wx.showToast({
-                title: '该商品已下架',
+                title: '该餐品已下架',
                 icon: 'none',
                 duration: 2000
             })

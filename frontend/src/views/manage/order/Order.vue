@@ -182,7 +182,7 @@ export default {
           }
         }
       }, {
-        title: '发起人',
+        title: '购买人',
         ellipsis: true,
         dataIndex: 'userName',
         scopedSlots: { customRender: 'userNameShow' }

@@ -118,7 +118,7 @@
     color: rgba(254,0,0,0.8);
 }
 
-/*-------商品列表-------*/
+/*-------餐品列表-------*/
 .canui-shop-goods-list{
     padding:10rpx 20rpx 0px;
 }

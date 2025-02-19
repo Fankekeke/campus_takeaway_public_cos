@@ -23,7 +23,7 @@
 <view class="cu-bar search" style="margin-top:{{StatusBar}}px;">
     <view class='search-form round'>
         <text class="icon-search"></text>
-        <input type="text" bindinput='getKeyValue' value="{{key}}" placeholder="搜索店铺内的商品" confirm-type="search" placeholder-class="canui-input-placeholder"></input>
+        <input type="text" bindinput='getKeyValue' value="{{key}}" placeholder="搜索店铺内的餐品" confirm-type="search" placeholder-class="canui-input-placeholder"></input>
     </view>
     <view class='action'>
         <button class='cu-btn shadow-blur round canui-btn-wxjn' bindtap="search">搜索</button>
@@ -37,7 +37,7 @@
     </view>
 </scroll-view>
 
-<!--商品列表-->
+<!--餐品列表-->
 <view class='nav-list canui-shop-goods-list'>
     <navigator wx:for="{{ShopList}}" wx:key="{{item.index}}" class="nav-li" open-type="navigate" hover-class='none' url="/pages/shop/goods/details?commoditId={{item.index}}">
         <image src="http://127.0.0.1:9527/imagesWeb/{{item.image}}" mode="aspectFill"></image>

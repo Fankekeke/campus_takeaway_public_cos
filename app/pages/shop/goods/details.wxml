@@ -1,4 +1,4 @@
-<!-- 商品轮播图 -->
+<!-- 餐品轮播图 -->
 <swiper class="screen-swiper square-dot bg-white" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
     <swiper-item wx:for="{{swiperlist}}" wx:key="index">
         <image src="http://127.0.0.1:9527/imagesWeb/{{item}}" mode='aspectFill'></image>
@@ -9,16 +9,16 @@
     <navigator class='icon-back' open-type="navigateBack" hover-class="none"></navigator>
     <navigator class='icon-home' open-type="navigateBack" hover-class="none"></navigator>
 </view>
-<!-- 商品价格 -->
+<!-- 餐品价格 -->
 <view class="bg-white canui-goods-box" style="padding-top:30rpx;">
     <text class="text-price text-red text-xl">{{ goods.price }}</text>
 </view>
-<!-- 商品名称 -->
+<!-- 餐品名称 -->
 <view class="bg-white canui-goods-box canui-xzwz text-black">
     {{ goods.name }}
     <view wx:if="{{ goods.onPut == 0 }}" class="cu-tag bg-blue radius sm">下架中</view>
 </view>
-<!-- 商品属性 -->
+<!-- 餐品属性 -->
 <view class="bg-white grid col-3 canui-goods-box text-gray text-sm">
     <view class='padding-sm'>
         类型：
@@ -29,19 +29,19 @@
     <view class='padding-sm text-center'>销量：{{ goods.orderNum }}笔</view>
     <view class='padding-sm text-right'>快递包邮</view>
 </view>
-<!-- 商品详情 -->
+<!-- 餐品详情 -->
 <view class="cu-bar bg-white margin-top solid-bottom">
     <view class='action'>
         <text class='icon-title text-red'></text>
-        <text>商品详情</text>
+        <text>餐品详情</text>
     </view>
 </view>
 <view class="bg-white padding cauni-details-box">{{ goods.content }}</view>
-<!-- 商品评价 -->
+<!-- 餐品评价 -->
 <view class="cu-bar bg-white margin-top solid-bottom">
     <view class='action'>
         <text class='icon-title text-red'></text>
-        <text>商品评价</text>
+        <text>餐品评价</text>
     </view>
 </view>
 <view class="cu-list menu-avatar bg-white comment" style="padding-bottom: 50px">

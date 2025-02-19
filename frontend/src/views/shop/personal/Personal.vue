@@ -3,9 +3,7 @@
     <a-col :span="6">
       <div style="background:#ECECEC; padding:30px;margin-top: 30px">
         <a-card :bordered="false">
-          <b style="font-size: 15px;font-family: SimHei">店铺信息 -
-            <span v-if="shopInfo != null && shopInfo.status == '0'" style="font-size: 13px;color: red;font-weight: 500">未审核</span>
-            <span v-if="shopInfo != null && shopInfo.status == '1'" style="font-size: 13px;color: green;font-weight: 500">已审核</span>
+          <b style="font-size: 15px;font-family: SimHei">店铺信息
           </b>
         </a-card>
         <a-card :bordered="false">

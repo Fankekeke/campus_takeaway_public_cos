@@ -45,7 +45,7 @@
                 </text>
             </view>
             <view class="order-price-box">
-                共1件商品 合计：
+                共1件餐品 合计：
                 <text class="text-price">{{ item.price }}</text>
             </view>
             <view class="grid col-4 flex justify-end order-btn-box">
@@ -92,7 +92,7 @@
                 </text>
             </view>
             <view class="order-price-box">
-                共1件商品 合计：
+                共1件餐品 合计：
                 <text class="text-price">{{ item.price }}</text>
             </view>
             <view class="grid col-4 flex justify-end order-btn-box">

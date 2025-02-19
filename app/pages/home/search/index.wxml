@@ -35,7 +35,7 @@
             </view>
         </view>
         <view wx:if="{{ commodity.length === 0 }}">
-            <van-empty style="height: 400px;margin: 0 auto" description="无商品信息" />
+            <van-empty style="height: 400px;margin: 0 auto" description="无餐品信息" />
         </view>
     </view>
     <view class="cu-list menu menu-avatar" wx:if="{{ TabCur == 1 }}">

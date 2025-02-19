@@ -6,7 +6,7 @@ Page({
         CustomBar: app.globalData.CustomBar,
         TabbarBot: app.globalData.tabbar_bottom,
         TabCur: 0,scrollLeft:0,
-        SortMenu: [{id:0,name:"商品列表"},{id:1,name:"店铺列表"}],
+        SortMenu: [{id:0,name:"餐品列表"},{id:1,name:"店铺列表"}],
         key: '',
         shopId: null,
         goodsList: []
