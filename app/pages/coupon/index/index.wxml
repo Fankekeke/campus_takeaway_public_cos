@@ -24,7 +24,7 @@
                     <view class="cu-tag bg-blue">热度 {{item.replyNum}}</view>
                     <view class="cu-bar bg-shadeBottom">
                         <text class="text-cut">
-                            {{item.content}}
+                            {{item.title}}
                         </text>
                     </view>
                 </view>

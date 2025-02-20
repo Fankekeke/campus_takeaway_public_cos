@@ -11,11 +11,11 @@
         <view class="cu-list menu">
             <view class="cu-item">
                 <view class='content'>
-                    <view class="text-df" wx:if="{{ orderInfo.orderStatus == 1 }}">包裹正在运送路上</view>
-                    <view class="text-df" wx:if="{{ orderInfo.orderStatus == 3 }}">包裹已送达</view>
+                    <view class="text-df" wx:if="{{ orderInfo.orderStatus == 1 }}">餐品正在运送路上</view>
+                    <view class="text-df" wx:if="{{ orderInfo.orderStatus == 3 }}">餐品已送达</view>
                     <!-- <view class='text-sm'>2019-03-21 18:00:00</view> -->
                 </view>
-                <view class='action canui-status-3'></view>
+                <!-- <view class='action canui-status-3'></view> -->
             </view>
         </view>
 
@@ -25,8 +25,8 @@
         <view class="cu-list menu bg-white">
             <view class="cu-item">
                 <view class='content'>
-                    <view class="canui-xzwz text-df" wx:if="{{ orderInfo.orderStatus == 1 }}">包裹正在运送路上</view>
-                    <view class="canui-xzwz text-df" wx:if="{{ orderInfo.orderStatus == 3 }}">包裹已送达</view>
+                    <view class="canui-xzwz text-df" wx:if="{{ orderInfo.orderStatus == 1 }}">餐品正在运送路上</view>
+                    <view class="canui-xzwz text-df" wx:if="{{ orderInfo.orderStatus == 3 }}">餐品已送达</view>
                     <!-- <view class='text-gray text-sm'>2019-03-21 18:00:00</view> -->
                 </view>
                 <view class='action'><view class='text-grey icon-right'></view></view>

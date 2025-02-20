@@ -8,11 +8,11 @@ Page({
 		current: 0,lines: 0,
 		swiperlist: [{
 			id: 0,
-			url: 'https://i02.appmifile.com/758_operator_hk/28/11/2024/0e1a08409bda230e31c6a29316550034.jpg',
+			url: 'https://qcloud.dpfile.com/pc/Jh4wD8Tskn-Q64fKe3fpG_cSjX9drQtcVFt3RwNWij10TSg4L6IKeriOPT3miyjv.jpg',
 			type: 1
 		}, {
 			id: 1,
-			url: 'https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-vacuum-cleaner-g20-max/PC/64300d2ceef6f338265d461161ce8906.jpg',
+			url: 'https://qcloud.dpfile.com/pc/ozAy1ToAaef54qSgoZkVh4DA2mQxm-edqD64ClGlGmvmCHNL36KrjfmGKm7o_t8T.jpg',
 			type: 2
 		}],
 		iconList: [{
@@ -33,12 +33,6 @@ Page({
 			color: 'yellow',
 			name: '论坛',
 			type: 3
-		}, {
-			id: 4,
-			icon: 'discoverfill',
-			color: 'olive',
-			name: '餐品',
-			type: 4
 		}],
 		Headlines: [{
 			id:1,
@@ -168,8 +162,11 @@ Page({
 			});
 		}
 		if (item.itemtype === 2) {
+			// wx.navigateTo({
+			// 	url: '/pages/home/groom/index'
+			// });
 			wx.navigateTo({
-				url: '/pages/home/groom/index'
+				url: '/pages/shop/index/index?shopId=1'
 			});
 		}
 		if (item.itemtype === 3) {

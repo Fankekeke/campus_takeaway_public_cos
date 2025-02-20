@@ -1,5 +1,5 @@
 <!--背景效果-->
-<image src="https://raw.githubusercontent.com/vueComponent/ant-design-vue/master/components/vc-slick/assets/img/react-slick/abstract04.jpg" mode="aspectFill" class="canui-head-vague"></image>
+<image src="https://img1.baidu.com/it/u=1998643210,2665525468&fm=253&fmt=auto&app=120&f=JPEG?w=1199&h=800" mode="aspectFill" class="canui-head-vague"></image>
 <view class="canui-head-gradient"></view>
 
 <!--标题栏区域-->
