@@ -598,7 +598,7 @@ public class WebController {
     public R evaluationAdd(@RequestBody Evaluation evaluation) {
         OrderInfo orderInfo = orderInfoService.getById(evaluation.getOrderId());
         List<OrderDetail> orderDetailList = orderDetailService.list(Wrappers.<OrderDetail>lambdaQuery().eq(OrderDetail::getCode, orderInfo.getCode()));
-        evaluation.setOrderId(orderDetailList.get(0).getId());
+        evaluation.setOrderId(orderInfo.getId());
         evaluation.setCreateDate(DateUtil.formatDateTime(new Date()));
         return R.ok(evaluationService.save(evaluation));
     }
