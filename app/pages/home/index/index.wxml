@@ -72,9 +72,9 @@
                     <view class="cu-list menu menu-avatar">
                         <view class="cu-item">
                             <view class='content flex-sub'>
-                                <view class='text-grey'>{{ item.name }}</view>
+                                <view class='text-grey' style="font-size: 12px">{{ item.name }}</view>
                                 <view class='text-gray text-sm flex justify-between'>
-                                    {{item.orderNum}}人种草
+                                    销量：{{item.orderNum}}
                                 </view>
                             </view>
                         </view>

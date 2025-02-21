@@ -19,10 +19,10 @@
           </a-form-item>
         </a-col>
         <a-col :span="12">
-          <a-form-item label='型号' v-bind="formItemLayout">
+          <a-form-item label='原料' v-bind="formItemLayout">
             <a-input v-decorator="[
             'model',
-            { rules: [{ required: true, message: '请输入型号!' }] }
+            { rules: [{ required: true, message: '请输入原料!' }] }
             ]"/>
           </a-form-item>
         </a-col>

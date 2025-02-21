@@ -65,12 +65,12 @@
               </a-col>
             </a-row>
           </a-form>
-          <a-button key="submit" type="primary" :loading="loading" @click="handleSubmit">
+          <a-button key="submit" type="primary" :loading="loading" @click="handleSubmit" style="width: 100%">
             修改
           </a-button>
-          <a-button @click="add" style="margin-left: 15px">
-            审核
-          </a-button>
+<!--          <a-button @click="add" style="margin-left: 15px">-->
+<!--            审核-->
+<!--          </a-button>-->
         </a-card>
       </div>
     </a-col>

@@ -23,7 +23,7 @@
             </a-col>
             <a-col :md="6" :sm="24">
               <a-form-item
-                label="餐品型号"
+                label="餐品原料"
                 :labelCol="{span: 5}"
                 :wrapperCol="{span: 18, offset: 1}">
                 <a-input v-model="queryParams.model"/>
@@ -178,7 +178,7 @@ export default {
           }
         }
       }, {
-        title: '型号',
+        title: '原料',
         dataIndex: 'model',
         ellipsis: true,
         customRender: (text, row, index) => {

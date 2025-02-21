@@ -5,7 +5,7 @@
 <!--标题栏区域-->
 <view class="canui-head-custom" style="top:{{StatusBar}}px;">
     <view class='canui-shop-title' bindtap='btnback'>
-        <text class="icon-back"></text> <txet>{{ shopInfo.userName }}的小店</txet>
+        <text class="icon-back"></text> <txet>{{ shopInfo.userName }}</txet>
     </view>
     <view class="canui-shop-synopsis text-sm">
         <text class="canui-xzwz">{{ shopInfo.introduction }}</text>

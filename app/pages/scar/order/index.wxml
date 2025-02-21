@@ -25,7 +25,7 @@
         <view class="canui-order-item bg-white" wx:for="{{ orderList }}">
             <view class="head-title-box">
                 <text class="icon-shop"></text>
-                <text>{{ item.userName }}的小店</text>
+                <text>{{ item.userName }}</text>
                 <text class="icon-right"></text>
             </view>
             <navigator open-type="navigate" hover-class='none' url="/pages/order/details/index">
@@ -84,9 +84,9 @@
             <view class="log-list">
                 <text>餐品总价</text> <text class="text-price canui-text-right">{{ allPrice }}</text>
             </view>
-            <view class="log-list">
+            <!-- <view class="log-list">
                 <text>运费(快递)</text> <text class="text-price canui-text-right text-red">0.00</text>
-            </view>
+            </view> -->
             <view class="log-list bg-white text-df">
                 <text>订单总价</text><text class="text-sm text-gray">（手续费除外）</text>
                 <text class="text-price canui-text-right text-red">{{ allPrice }}</text>
@@ -97,7 +97,7 @@
 </view>
 
 <view class="bg-white canui-foor-fixed canui-submit-view {{TabbarBot=='y'?'canui-submit-order':''}}">
-    <view class="bg-red light text-sm canui-pay-tip">您的货物预定1~3内发货</view>
+    <view class="bg-red light text-sm canui-pay-tip">您的餐品等待商家接单后配送</view>
     <view class="canui-submit">
         <text class='text-red text-price canui-price'>{{ allPrice }}</text>
         <text class='bg-red canui-submit-btn' bindtap='submit'>提交订单</text>

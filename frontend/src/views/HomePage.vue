@@ -38,15 +38,15 @@
       </a-card>
     </a-row>
     <a-row :gutter="8" class="count-info" v-if="user.roleId == 74">
-      <a-col :span="14" class="visit-count-wrapper">
+      <a-col :span="12" class="visit-count-wrapper">
         <a-row :gutter="8">
-          <a-col :span="12">
+          <a-col :span="12" v-show="false">
             <a-card class="visit-count">
               <a-skeleton active v-if="loading" />
               <apexchart v-show="!loading" ref="count" type=bar height=300 :options="chartOptions" :series="series" />
             </a-card>
           </a-col>
-          <a-col :span="12">
+          <a-col :span="24">
             <a-card class="visit-count">
               <a-skeleton active v-if="loading" />
               <apexchart v-if="!loading" type="line" height="300" :options="chartOptions1" :series="series1"></apexchart>
@@ -54,7 +54,7 @@
           </a-col>
         </a-row>
       </a-col>
-      <a-col :span="10" class="project-wrapper">
+      <a-col :span="12" class="project-wrapper">
         <div style="background: #ECECEC; padding: 30px">
           <a-row :gutter="16">
             <a-col :span="8">
@@ -78,7 +78,7 @@
             </a-col>
             <a-col :span="16">
               <a-skeleton active v-if="loading" />
-              <apexchart v-if="!loading" type="donut" height="283" :options="chartOptions3" :series="series3"></apexchart>
+              <apexchart v-if="!loading" type="donut" height="265" :options="chartOptions3" :series="series3"></apexchart>
             </a-col>
           </a-row>
         </div>
@@ -112,7 +112,7 @@
       <a-col :span="14" style="margin-top: 10px;padding-right: 0">
         <a-card class="visit-count">
           <a-skeleton active v-if="loading" />
-          <a-select style="width: 300px" v-model="shopId" v-if="!loading" @change="shopChange" option-label-prop="label">
+          <a-select style="width: 300px" disabled v-model="shopId" v-if="!loading" @change="shopChange" option-label-prop="label">
             <a-select-option v-for="(item, index) in shopList" :key="index" :value="item.id" :label="item.userName">
               <a-row>
                 <a-col :span="4">

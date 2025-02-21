@@ -41,7 +41,7 @@
                 <view class="head-title-box">
                     <navigator open-type="navigate" hover-class='none' url="/pages/shop/index/index?shopId={{ orderInfo.shopId }}">
                         <text class="icon-shop"></text>
-                        <text>{{ orderInfo.userName }}的小店</text>
+                        <text>{{ orderInfo.userName }}</text>
                         <text class="icon-right"></text>
                     </navigator>
                 </view>
@@ -62,20 +62,20 @@
             <view class="log-list">
                 <text>餐品总价</text> <text class="text-price canui-text-right">{{ orderInfo.price }}</text>
             </view>
-            <view class="log-list">
+            <!-- <view class="log-list">
                 <text>运费(快递)</text> <text class="text-price canui-text-right">0.00</text>
-            </view>
+            </view> -->
             <view class="log-list bg-white text-df">
                 <text>订单总价</text><text class="text-sm text-gray">（手续费除外）</text>
                 <text class="text-price canui-text-right">{{ orderInfo.price }}</text>
             </view>
         </view>
-        <view class="order-price-log-zj">
+        <!-- <view class="order-price-log-zj">
             <text>实际消费积分</text> <text class="text-price canui-text-right text-red">{{ orderInfo.price }}</text>
         </view>
         <view class="order-price-log-zj">
             <text>实付手续费</text> <text class="text-price canui-text-right text-red">0.00</text>
-        </view>
+        </view> -->
     </view>
 
     <view class="margin-top order-address-box">
@@ -99,14 +99,14 @@
                 <text>下单时间：</text> <text class="text-gray">{{ orderInfo.orderDate }}</text>
             </view>
         </view>
-        <view class="order-menu-list solid-bottom">
+        <!-- <view class="order-menu-list solid-bottom">
             <view class="log-list bg-white text-df">
                 <text>快递单号：</text> <text class="text-gray">123456789789</text>
             </view>
             <view class="log-list bg-white text-df">
                 <text>快递名称：</text> <text class="text-gray">顺丰快递</text>
             </view>
-        </view>
+        </view> -->
     </view>
 
     <view class="grid col-2 flex bg-white order-contact-box">

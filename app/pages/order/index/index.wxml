@@ -19,7 +19,7 @@
         <view class="canui-order-item bg-white" wx:for="{{ orderList }}" wx:if="{{ TabCur == 0 || TabCur == 2 || TabCur == 1 }}">
             <view class="head-title-box">
                 <text class="icon-shop"></text>
-                <text>{{ item.userName }}的小店</text>
+                <text>{{ item.userName }}</text>
                 <text class="icon-right"></text>
             </view>
             <navigator open-type="navigate" hover-class='none' url="/pages/order/details/index?orderId={{ item.orderId }}">

@@ -12,7 +12,7 @@
         <view class="cu-item">
             <view class="cu-avatar radius lg" style="background-image:url({{ shopInfo.avatar }});"></view>
             <view class='content'>
-                <view class='text-grey'>{{ shopInfo.userName }}的小店</view>
+                <view class='text-grey'>{{ shopInfo.userName }}</view>
                 <view class='text-gray text-sm'>店铺ID：{{ shopInfo.shopCode }}</view>
             </view>
         </view>
@@ -32,7 +32,7 @@
                 <text class='text-gray'>店铺名称</text>
             </view>
             <view class='action'>
-                <text class='text-gray text-sm'>{{ shopInfo.userName }}的小店</text>
+                <text class='text-gray text-sm'>{{ shopInfo.userName }}</text>
             </view>
         </view>
         <view class="cu-item">

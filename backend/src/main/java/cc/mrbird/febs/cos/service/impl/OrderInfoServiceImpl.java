@@ -70,7 +70,7 @@ public class OrderInfoServiceImpl extends ServiceImpl<OrderInfoMapper, OrderInfo
         LinkedHashMap<String, Object> result = new LinkedHashMap<>();
         result.put("userNum", userInfoService.count());
         result.put("userAuditNum", userInfoService.count(Wrappers.<UserInfo>lambdaQuery().eq(UserInfo::getType, 2)));
-        result.put("orderNum", this.count(Wrappers.<OrderInfo>lambdaQuery().eq(OrderInfo::getOrderStatus, 2)));
+        result.put("orderNum", this.count(Wrappers.<OrderInfo>lambdaQuery().ne(OrderInfo::getOrderStatus, 0)));
         result.put("commodityNum", this.commodityInfoService.count());
         // 订单统计
         result.put("orderRevenueData", baseMapper.orderRevenueData());

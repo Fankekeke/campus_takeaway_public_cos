@@ -41,7 +41,7 @@
         <a-col :span="8"><b>库存：</b>
           {{ commodityData.stockNum }}
         </a-col>
-        <a-col :span="8"><b>型号：</b>
+        <a-col :span="8"><b>原料：</b>
           {{ commodityData.model }}
         </a-col>
         <a-col :span="8"><b>所属商家：</b>
